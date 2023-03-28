@@ -1,0 +1,15 @@
+Notes:
+    forward kinematics of a robot with 4 degrees of freedom.
+    *find the end effector
+
+Declare the matrices for the 4 transformational matrices T1...T4
+INITIALIZE the link length (a), Twist Angle(alpha), Joint offset(d), Joint angle(theta) for the entries in the transformational matrices T1...T4
+Make all the transformational matrices to be identity matrices
+
+insert all the link description and the joint description involved in T1...T4
+
+do the matrix multiplication T1 * T2 * T3 * T4
+
+block the entries between 0,0 to 3,3 to be the end effector orientation
+column 4 to be the end effector position
+
