@@ -16,28 +16,28 @@ int main()
     MatrixXd T4(4,4); //the overall transformation matrix and t1...t4 matrices
 
     // link length for t1...t4
-    double linkLengthT1 {0.3};
-    double linkLengthT2 {0.2};
-    double linkLengthT3 {0.2};
-    double linkLengthT4 {0.1};
+    double linkLengthT1 {0.5};
+    double linkLengthT2 {1.0};
+    double linkLengthT3 {0.5};
+    double linkLengthT4 {0.0};
 
     // twist angle for t1...t4
-    double twistAngleT1 {0};
+    double twistAngleT1 {M_PI_2};
     double twistAngleT2 {0};
-    double twistAngleT3 {0};
+    double twistAngleT3 {M_PI_2};
     double twistAngleT4 {0};
 
     //joint offset for t1...t4
-    double jointOffsetT1 {0};
-    double jointOffsetT2 {0.1};
-    double jointOffsetT3 {0};
-    double jointOffsetT4 {0};
+    double jointOffsetT1 {1.0};
+    double jointOffsetT2 {0.5};
+    double jointOffsetT3 {0.5};
+    double jointOffsetT4 {0.25};
 
     //joint angle for t1...t4
-    double jointAngleT1 {30};
-    double jointAngleT2 {-60};
-    double jointAngleT3 {45};
-    double jointAngleT4 {-15};
+    double jointAngleT1 {M_PI_2};
+    double jointAngleT2 {0};
+    double jointAngleT3 {M_PI_2};
+    double jointAngleT4 {M_PI_4};
 
     T1<<cos(jointAngleT1), -sin(jointAngleT1) * cos(twistAngleT1), sin(jointAngleT1) * sin(twistAngleT1) , linkLengthT1 * cos(jointAngleT1),
         sin(jointAngleT1), cos(jointAngleT1) * cos(twistAngleT1), -cos(jointAngleT1) * sin(twistAngleT1), linkLengthT1 * sin(jointAngleT1),
