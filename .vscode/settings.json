@@ -2,5 +2,8 @@
     "cmake.sourceDirectory": "/home/manasseh/documents/forward_kinematics_attempt",
     "files.associations": {
         "iostream": "cpp"
-    }
+    },
+    "cSpell.words": [
+        "cmath"
+    ]
 }

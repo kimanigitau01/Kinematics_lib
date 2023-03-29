@@ -70,7 +70,8 @@ int main()
     T = T1 * T2 * T3 * T4;
 
 
-    cout<<T<<endl;
+    cout<<T<<"\n"<<endl;
+
     cout<<"End effector orientation: \n"<<T.block(0,0,3,3)<<"\n";
     cout<<"End Effector Position: \n"<<T.block(0,3,3,1)<<"\n";
     
