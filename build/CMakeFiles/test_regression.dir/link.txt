@@ -1,0 +1,1 @@
+/usr/bin/c++ -g CMakeFiles/test_regression.dir/forward_kinematics_mine/forward_kinematics.cpp.o CMakeFiles/test_regression.dir/Inverse_kinematics_mine/inverse_kinematics.cpp.o -o test_regression 

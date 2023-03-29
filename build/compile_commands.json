@@ -1,0 +1,12 @@
+[
+{
+  "directory": "/home/manasseh/documents/forward_kinematics_attempt/build",
+  "command": "/usr/bin/c++  -I/home/manasseh/documents/forward_kinematics_attempt/forward_kinematics_mine -I/home/manasseh/documents/forward_kinematics_attempt/inverse_kinematics_mine -g --std=c++11 -o CMakeFiles/test_regression.dir/forward_kinematics_mine/forward_kinematics.cpp.o -c /home/manasseh/documents/forward_kinematics_attempt/forward_kinematics_mine/forward_kinematics.cpp",
+  "file": "/home/manasseh/documents/forward_kinematics_attempt/forward_kinematics_mine/forward_kinematics.cpp"
+},
+{
+  "directory": "/home/manasseh/documents/forward_kinematics_attempt/build",
+  "command": "/usr/bin/c++  -I/home/manasseh/documents/forward_kinematics_attempt/forward_kinematics_mine -I/home/manasseh/documents/forward_kinematics_attempt/inverse_kinematics_mine -g --std=c++11 -o CMakeFiles/test_regression.dir/Inverse_kinematics_mine/inverse_kinematics.cpp.o -c /home/manasseh/documents/forward_kinematics_attempt/Inverse_kinematics_mine/inverse_kinematics.cpp",
+  "file": "/home/manasseh/documents/forward_kinematics_attempt/Inverse_kinematics_mine/inverse_kinematics.cpp"
+}
+]
