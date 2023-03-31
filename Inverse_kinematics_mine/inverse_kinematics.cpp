@@ -1,23 +1,31 @@
-/* this is for a robot with a DoF of 3 */
+/* this is for a planar  3R robot with a DoF of 3 */
 #include <iostream>
+#include <Eigen/Dense>
 #include <cmath>
-
+ 
 using std::cout;
 using std::endl;
+using namespace Eigen;
 
 int main()
 {
     // initialize the end effector position and orientation
     double x  {3};
     double y  {4};
+    double z {0};
     double phi {150};
 
     // initialize the constant link lengths
     const int L1 {2};
     const int L2 {5};
 
+    // the twist angles are zero
+
     //compute and compare the general transformation matrix and desired matrix
     // to get the joint angles
+
+    double d {z}; // since z = d in a transformation matrix of 3 dof
+
 
     // the variables are the the cos and sine (sine has two values due to the sqrt())
     double c2 {};

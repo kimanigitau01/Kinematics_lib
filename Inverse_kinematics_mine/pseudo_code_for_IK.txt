@@ -1,4 +1,9 @@
-find the joint angles for a robot with 4 dof 
+T_0_4 = [ c1*c2*c3*c4 - s1*s4  -c1*c2*c3*s4 - s1*c4   c1*s2    a1*c1 + a2*c12 + a3*c123 + a4*c1234 ]
+        [ s1*c2*c3*c4 + c1*s4  -s1*c2*c3*s4 + c1*c4   s1*s2    a1*s1 + a2*s12 + a3*s123 + a4*s1234 ]
+        [ -s2*c3*c4            s2*s3            c2*c3     d1 + a1*s2 + a2*s23 + a3*s123 + a4*s1234 ]
+        [ 0                    0                0         1                                    ]
+
+find the joint angles for a robot with 3 dof 
 
 
 INITIALIZE the position of the end effector (x,y,phi)
