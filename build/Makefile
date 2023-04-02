@@ -117,48 +117,48 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named test_regression
+# Target rules for targets named kinematics_lib
 
 # Build rule for target.
-test_regression: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_regression
-.PHONY : test_regression
+kinematics_lib: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 kinematics_lib
+.PHONY : kinematics_lib
 
 # fast build rule for target.
-test_regression/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_regression.dir/build.make CMakeFiles/test_regression.dir/build
-.PHONY : test_regression/fast
+kinematics_lib/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kinematics_lib.dir/build.make CMakeFiles/kinematics_lib.dir/build
+.PHONY : kinematics_lib/fast
 
-Inverse_kinematics_mine/inverse_kinematics.o: Inverse_kinematics_mine/inverse_kinematics.cpp.o
-.PHONY : Inverse_kinematics_mine/inverse_kinematics.o
+Inverse_kinematics_mine/inverse_kinematics_openManipulator.o: Inverse_kinematics_mine/inverse_kinematics_openManipulator.cpp.o
+.PHONY : Inverse_kinematics_mine/inverse_kinematics_openManipulator.o
 
 # target to build an object file
-Inverse_kinematics_mine/inverse_kinematics.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_regression.dir/build.make CMakeFiles/test_regression.dir/Inverse_kinematics_mine/inverse_kinematics.cpp.o
-.PHONY : Inverse_kinematics_mine/inverse_kinematics.cpp.o
+Inverse_kinematics_mine/inverse_kinematics_openManipulator.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kinematics_lib.dir/build.make CMakeFiles/kinematics_lib.dir/Inverse_kinematics_mine/inverse_kinematics_openManipulator.cpp.o
+.PHONY : Inverse_kinematics_mine/inverse_kinematics_openManipulator.cpp.o
 
-Inverse_kinematics_mine/inverse_kinematics.i: Inverse_kinematics_mine/inverse_kinematics.cpp.i
-.PHONY : Inverse_kinematics_mine/inverse_kinematics.i
+Inverse_kinematics_mine/inverse_kinematics_openManipulator.i: Inverse_kinematics_mine/inverse_kinematics_openManipulator.cpp.i
+.PHONY : Inverse_kinematics_mine/inverse_kinematics_openManipulator.i
 
 # target to preprocess a source file
-Inverse_kinematics_mine/inverse_kinematics.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_regression.dir/build.make CMakeFiles/test_regression.dir/Inverse_kinematics_mine/inverse_kinematics.cpp.i
-.PHONY : Inverse_kinematics_mine/inverse_kinematics.cpp.i
+Inverse_kinematics_mine/inverse_kinematics_openManipulator.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kinematics_lib.dir/build.make CMakeFiles/kinematics_lib.dir/Inverse_kinematics_mine/inverse_kinematics_openManipulator.cpp.i
+.PHONY : Inverse_kinematics_mine/inverse_kinematics_openManipulator.cpp.i
 
-Inverse_kinematics_mine/inverse_kinematics.s: Inverse_kinematics_mine/inverse_kinematics.cpp.s
-.PHONY : Inverse_kinematics_mine/inverse_kinematics.s
+Inverse_kinematics_mine/inverse_kinematics_openManipulator.s: Inverse_kinematics_mine/inverse_kinematics_openManipulator.cpp.s
+.PHONY : Inverse_kinematics_mine/inverse_kinematics_openManipulator.s
 
 # target to generate assembly for a file
-Inverse_kinematics_mine/inverse_kinematics.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_regression.dir/build.make CMakeFiles/test_regression.dir/Inverse_kinematics_mine/inverse_kinematics.cpp.s
-.PHONY : Inverse_kinematics_mine/inverse_kinematics.cpp.s
+Inverse_kinematics_mine/inverse_kinematics_openManipulator.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kinematics_lib.dir/build.make CMakeFiles/kinematics_lib.dir/Inverse_kinematics_mine/inverse_kinematics_openManipulator.cpp.s
+.PHONY : Inverse_kinematics_mine/inverse_kinematics_openManipulator.cpp.s
 
 forward_kinematics_mine/forward_kinematics.o: forward_kinematics_mine/forward_kinematics.cpp.o
 .PHONY : forward_kinematics_mine/forward_kinematics.o
 
 # target to build an object file
 forward_kinematics_mine/forward_kinematics.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_regression.dir/build.make CMakeFiles/test_regression.dir/forward_kinematics_mine/forward_kinematics.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kinematics_lib.dir/build.make CMakeFiles/kinematics_lib.dir/forward_kinematics_mine/forward_kinematics.cpp.o
 .PHONY : forward_kinematics_mine/forward_kinematics.cpp.o
 
 forward_kinematics_mine/forward_kinematics.i: forward_kinematics_mine/forward_kinematics.cpp.i
@@ -166,7 +166,7 @@ forward_kinematics_mine/forward_kinematics.i: forward_kinematics_mine/forward_ki
 
 # target to preprocess a source file
 forward_kinematics_mine/forward_kinematics.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_regression.dir/build.make CMakeFiles/test_regression.dir/forward_kinematics_mine/forward_kinematics.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kinematics_lib.dir/build.make CMakeFiles/kinematics_lib.dir/forward_kinematics_mine/forward_kinematics.cpp.i
 .PHONY : forward_kinematics_mine/forward_kinematics.cpp.i
 
 forward_kinematics_mine/forward_kinematics.s: forward_kinematics_mine/forward_kinematics.cpp.s
@@ -174,7 +174,7 @@ forward_kinematics_mine/forward_kinematics.s: forward_kinematics_mine/forward_ki
 
 # target to generate assembly for a file
 forward_kinematics_mine/forward_kinematics.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_regression.dir/build.make CMakeFiles/test_regression.dir/forward_kinematics_mine/forward_kinematics.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kinematics_lib.dir/build.make CMakeFiles/kinematics_lib.dir/forward_kinematics_mine/forward_kinematics.cpp.s
 .PHONY : forward_kinematics_mine/forward_kinematics.cpp.s
 
 # Help Target
@@ -185,10 +185,10 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... test_regression"
-	@echo "... Inverse_kinematics_mine/inverse_kinematics.o"
-	@echo "... Inverse_kinematics_mine/inverse_kinematics.i"
-	@echo "... Inverse_kinematics_mine/inverse_kinematics.s"
+	@echo "... kinematics_lib"
+	@echo "... Inverse_kinematics_mine/inverse_kinematics_openManipulator.o"
+	@echo "... Inverse_kinematics_mine/inverse_kinematics_openManipulator.i"
+	@echo "... Inverse_kinematics_mine/inverse_kinematics_openManipulator.s"
 	@echo "... forward_kinematics_mine/forward_kinematics.o"
 	@echo "... forward_kinematics_mine/forward_kinematics.i"
 	@echo "... forward_kinematics_mine/forward_kinematics.s"

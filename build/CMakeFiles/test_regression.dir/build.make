@@ -83,30 +83,30 @@ CMakeFiles/test_regression.dir/forward_kinematics_mine/forward_kinematics.cpp.s:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test_regression.dir/forward_kinematics_mine/forward_kinematics.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/manasseh/documents/forward_kinematics_attempt/forward_kinematics_mine/forward_kinematics.cpp -o CMakeFiles/test_regression.dir/forward_kinematics_mine/forward_kinematics.cpp.s
 
-CMakeFiles/test_regression.dir/Inverse_kinematics_mine/inverse_kinematics.cpp.o: CMakeFiles/test_regression.dir/flags.make
-CMakeFiles/test_regression.dir/Inverse_kinematics_mine/inverse_kinematics.cpp.o: ../Inverse_kinematics_mine/inverse_kinematics.cpp
-CMakeFiles/test_regression.dir/Inverse_kinematics_mine/inverse_kinematics.cpp.o: CMakeFiles/test_regression.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/manasseh/documents/forward_kinematics_attempt/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/test_regression.dir/Inverse_kinematics_mine/inverse_kinematics.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test_regression.dir/Inverse_kinematics_mine/inverse_kinematics.cpp.o -MF CMakeFiles/test_regression.dir/Inverse_kinematics_mine/inverse_kinematics.cpp.o.d -o CMakeFiles/test_regression.dir/Inverse_kinematics_mine/inverse_kinematics.cpp.o -c /home/manasseh/documents/forward_kinematics_attempt/Inverse_kinematics_mine/inverse_kinematics.cpp
+CMakeFiles/test_regression.dir/Inverse_kinematics_mine/inverse_kinematics_openManipulator.cpp.o: CMakeFiles/test_regression.dir/flags.make
+CMakeFiles/test_regression.dir/Inverse_kinematics_mine/inverse_kinematics_openManipulator.cpp.o: ../Inverse_kinematics_mine/inverse_kinematics_openManipulator.cpp
+CMakeFiles/test_regression.dir/Inverse_kinematics_mine/inverse_kinematics_openManipulator.cpp.o: CMakeFiles/test_regression.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/manasseh/documents/forward_kinematics_attempt/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/test_regression.dir/Inverse_kinematics_mine/inverse_kinematics_openManipulator.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test_regression.dir/Inverse_kinematics_mine/inverse_kinematics_openManipulator.cpp.o -MF CMakeFiles/test_regression.dir/Inverse_kinematics_mine/inverse_kinematics_openManipulator.cpp.o.d -o CMakeFiles/test_regression.dir/Inverse_kinematics_mine/inverse_kinematics_openManipulator.cpp.o -c /home/manasseh/documents/forward_kinematics_attempt/Inverse_kinematics_mine/inverse_kinematics_openManipulator.cpp
 
-CMakeFiles/test_regression.dir/Inverse_kinematics_mine/inverse_kinematics.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test_regression.dir/Inverse_kinematics_mine/inverse_kinematics.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/manasseh/documents/forward_kinematics_attempt/Inverse_kinematics_mine/inverse_kinematics.cpp > CMakeFiles/test_regression.dir/Inverse_kinematics_mine/inverse_kinematics.cpp.i
+CMakeFiles/test_regression.dir/Inverse_kinematics_mine/inverse_kinematics_openManipulator.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test_regression.dir/Inverse_kinematics_mine/inverse_kinematics_openManipulator.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/manasseh/documents/forward_kinematics_attempt/Inverse_kinematics_mine/inverse_kinematics_openManipulator.cpp > CMakeFiles/test_regression.dir/Inverse_kinematics_mine/inverse_kinematics_openManipulator.cpp.i
 
-CMakeFiles/test_regression.dir/Inverse_kinematics_mine/inverse_kinematics.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test_regression.dir/Inverse_kinematics_mine/inverse_kinematics.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/manasseh/documents/forward_kinematics_attempt/Inverse_kinematics_mine/inverse_kinematics.cpp -o CMakeFiles/test_regression.dir/Inverse_kinematics_mine/inverse_kinematics.cpp.s
+CMakeFiles/test_regression.dir/Inverse_kinematics_mine/inverse_kinematics_openManipulator.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test_regression.dir/Inverse_kinematics_mine/inverse_kinematics_openManipulator.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/manasseh/documents/forward_kinematics_attempt/Inverse_kinematics_mine/inverse_kinematics_openManipulator.cpp -o CMakeFiles/test_regression.dir/Inverse_kinematics_mine/inverse_kinematics_openManipulator.cpp.s
 
 # Object files for target test_regression
 test_regression_OBJECTS = \
 "CMakeFiles/test_regression.dir/forward_kinematics_mine/forward_kinematics.cpp.o" \
-"CMakeFiles/test_regression.dir/Inverse_kinematics_mine/inverse_kinematics.cpp.o"
+"CMakeFiles/test_regression.dir/Inverse_kinematics_mine/inverse_kinematics_openManipulator.cpp.o"
 
 # External object files for target test_regression
 test_regression_EXTERNAL_OBJECTS =
 
 test_regression: CMakeFiles/test_regression.dir/forward_kinematics_mine/forward_kinematics.cpp.o
-test_regression: CMakeFiles/test_regression.dir/Inverse_kinematics_mine/inverse_kinematics.cpp.o
+test_regression: CMakeFiles/test_regression.dir/Inverse_kinematics_mine/inverse_kinematics_openManipulator.cpp.o
 test_regression: CMakeFiles/test_regression.dir/build.make
 test_regression: CMakeFiles/test_regression.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/manasseh/documents/forward_kinematics_attempt/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable test_regression"

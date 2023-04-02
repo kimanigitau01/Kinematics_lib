@@ -1,4 +1,4 @@
 .vscode
-/build
+build/
 Inverse_kinematics_mine/inverse_kinematics.o
 forward_kinematics_mine/forward_kinematics.o
