@@ -1,0 +1,54 @@
+initialize the end effector position and the dh parameters:
+    1. twist angles
+    2. joint offsets
+    3. link lengths
+
+the final transformation matrix is given by:
+    nx, ox, ax, px,
+    ny, oy, ay, py,
+    nz, oz, az, pz,
+    0,  0,  0,  1;
+
+    -> the position vector is given by: px, py, pz
+    -> the orientation vector is given by: oz, oy, oz
+    -> the approach vector is given by: ax, ay, az
+    -> the  vector is given by: nx, ny, nz
+
+to get theta1 = atan(py/px) where py and pz are the end effector positions
+
+pr^2 = px^2 + py^2
+    thus; pr is the sqrt of the numbers
+
+    r3 = pr
+
+z3 = pz - d1 and phi = theta2 + theta3 + theta4;
+
+r2 = r3 - a4 cos phi
+
+z2 = z3 - a4 sin phi
+
+cos theta3 = (r2^2 + z2^2 - (a2^2 + a3^2))/(2 * a2 * a3)
+
+thus theta3 is ;
+    theta3_1 = + acos((r2^2 + z2^2 - (a2^2 + a3^2))/(2 * a2 * a3))
+    theta3_2 = -acos((r2^2 + z2^2 - (a2^2 + a3^2))/(2 * a2 * a3))
+
+N/B remember theta3 has 2 components theta3_1 and theta3_2
+
+since:
+    r2 = cos theta2 (a2 + a3 cos theta3) - sin theta2 (a3 * sin theta3)
+    
+    and
+
+    z2 = cos theta2 (a3 sin theta3) + sin theta2(a2 + a3 * cos theta3)
+
+    thus:
+    cos theta2 = ((a2 + a3 cos theta3) * r2 + (a3 * sin theta3) * z2) / (r2^2 + z2^2)
+
+    sin theta2 = ((a2 + a3 * cos theta3) * z2 + (a3 * sin theta3) * r2) / (r2^2 + z2^2)
+
+    theta2 = atan(sin theta2 / cos theta2)
+
+    N/B remember theta3 has 2 components theta3_1 and theta3_2
+
+theta4 =  phi - (theta2 + theta3)
