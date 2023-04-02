@@ -53,8 +53,10 @@ int main()
 
     double conversion_acos {((r2 * r2) + (z2 * z2) - ((l2 * l2) + (l3 * l3)))/(2 * l2 * l3)};
 
-    theta3_1 = +(acos(conversion_acos) * degree_conversion);
-    theta3_2 = -(acos(conversion_acos) * degree_conversion);
+    double joint_offset {(atan(0.024/0.128) * degree_conversion)};
+
+    theta3_1 = +((acos(conversion_acos) * degree_conversion) + joint_offset);
+    theta3_2 = -((acos(conversion_acos) * degree_conversion) + joint_offset);
     
     double x_1 {}; //cos(theta_2_1)
     x_1 = ((l2 + l3 * cos((theta3_1 * radians_conversion))) * r2 + (l3 * sin((theta3_1 * radians_conversion))) * z2) / ((r2 * r2) + (z2 * r2));
@@ -68,8 +70,8 @@ int main()
    double y_2 {}; //sin(theta _2_1)
    y_2 = ((l2 + l3 * cos((theta3_2 * radians_conversion))) * z2 + (l3 * sin((theta3_2 * radians_conversion))) * r2) / ((r2 * r2) + (z2 * z2));
 
-    theta2_1 = (atan(sin(y_1)/ cos(x_1)) * degree_conversion);
-    theta2_2 = (atan(sin(y_2)/ cos(x_2)) * degree_conversion);
+    theta2_1 = (atan(sin(y_1)/ cos(x_1)) * degree_conversion) - joint_offset;
+    theta2_2 = (atan(sin(y_2)/ cos(x_2)) * degree_conversion) - joint_offset;
 
     theta4_1  = phi - (theta2_1 + theta3_1);
     theta4_2  = phi - (theta2_2 + theta3_2);
