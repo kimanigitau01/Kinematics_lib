@@ -52,3 +52,6 @@ since:
     N/B remember theta3 has 2 components theta3_1 and theta3_2
 
 theta4 =  phi - (theta2 + theta3)
+
+https://robotics.stackexchange.com/questions/20899/inverse-kinematics-for-4-dof-articualted-manipluator
+// the above is a reference to inverse kinematics
