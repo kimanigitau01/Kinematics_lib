@@ -1,3 +1,0 @@
-/home/manasseh/documents/forward_kinematics_attempt/build/CMakeFiles/kinematics_lib.dir
-/home/manasseh/documents/forward_kinematics_attempt/build/CMakeFiles/edit_cache.dir
-/home/manasseh/documents/forward_kinematics_attempt/build/CMakeFiles/rebuild_cache.dir
